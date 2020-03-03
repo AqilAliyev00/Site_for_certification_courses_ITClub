@@ -1,0 +1,506 @@
+body{
+	max-height: 10000px;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-weight: 700;
+}
+
+p{
+	line-height: 28px;
+}
+
+.centered{
+	text-align: center;
+}
+
+a{
+	color: white;
+}
+
+a:hover, a:focus {
+	color: #7b7b7b;
+	text-decoration: none;
+	outline: 0;
+}
+
+hr{
+	display: block;
+	height: 1px;
+	border: 0;	
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+/*birinci bolme*/
+
+nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	padding: 10px 100px;
+	box-sizing: border-box;
+	transition: .5s;
+}
+nav.white{
+	background: white;
+	height: 80px;
+	padding: 10px 50px;
+	z-index: 1;
+	box-sizing: 0 6px 4px -4px rgba(0,0,0, .2);
+}
+nav .logo a{
+	float: left;
+	color: white;		
+	font-weight: bolder;
+	font-size: 40px;
+	margin-left: 0;
+	right: 20px;
+}
+nav.white .logo a{
+	color: black;
+}
+nav ul{
+	float: right;
+	margin-right: -50px;
+	padding: 0;
+	display: flex;
+}
+nav ul li{
+	list-style-type: none;
+	margin-right: -20px;
+	font-size: 12px;
+	font-weight: 700;
+}
+nav ul li a{
+	line-height: 80px;
+	color: #fff;
+	padding: 5px 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: .5s;
+}
+nav.white ul li a{
+	color: black;
+	line-height: 60px;
+}
+nav ul li a:hover{
+	color: lightgray;
+	text-decoration: none;
+}
+section.sec1{
+	width: 100%;
+	height: 73vh;
+	background: url(../images/14.jpg);
+	background-size: cover;
+}
+.responsive-bar{
+	display: none;
+}
+@media(max-width: 760px) {
+	.responsive-bar{
+		display: block;
+		width: 100%;
+		height: 60px;
+		background: white;
+		position: fixed;
+		top: 0;
+		left: 0;
+		padding: 5px 20px;
+		box-sizing: border-box;
+		z-index: 1;
+	}
+	.responsive-bar .logo{
+		float: right;
+	}
+	.responsive-bar .menu i{
+		float: right;
+		color: #000;
+		margin: 0;
+		padding: 0;
+		line-height: 50px;
+		cursor: pointer;
+		font-weight: 900;
+		font-size: 20px;
+	}
+	nav.white{
+		background: white;
+		height: 60px;
+		padding: 0;
+	}
+	
+	nav ul{
+		position: absolute;
+		width: 100%;
+		top: 60px;
+		left: 0;
+		background: white;
+		float: none;
+		display: none;
+	}
+	nav ul.active{
+		display: block;
+	}
+	nav ul li{
+		width: 100%;
+	}
+	nav ul li a{
+		display: block;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+		line-height: 30px !important;
+		color: black;
+	}
+}
+
+
+.navbar{
+	font-weight: 800;
+	font-size: 11px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.navbar-nav > .active > a{
+	background-color: rgb(245,245,245);
+}
+.navbar-brand{
+	color: white;
+	font-weight: bolder;
+	font-size: 38px;
+	letter-spacing: 1px;
+}
+
+
+/*birinci bolmede yazilar*/
+
+
+section #headerwrap{
+	padding-top: 60px;
+}
+
+section #headerwrap h1{
+	margin-top: 20px;
+	color: #fcfcfc;
+	font-size: 45px;
+	font-weight: 300;
+	letter-spacing: 3px;
+	text-align: center;
+	margin-top: 140px;
+	background-position: center center;
+	display: block;
+
+}
+#headerwrap h5{
+	color: #fcfcfc;
+	text-align: center;
+	margin-top: 10px;
+	display: block;
+	font-size: 15px;
+	border-spacing: 7;
+}
+
+
+/*ikinci bolme*/
+
+.company{
+	position: relative;
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 60px;
+    letter-spacing: -.7px;
+    font-family: poppins,sans-serif;
+    color: #1f1f1f;
+    margin: 0;
+    font-weight: 500;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding-bottom: 30px;
+}
+
+.the{
+	height: 2px;
+	width: 100px;
+	background: #17a2b8;
+	margin: auto;
+	padding: auto;
+}
+
+#time{
+	font-weight: 400;
+	font-size: 18px;
+	margin:0;padding: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+	line-height: 1.65714286em;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: grayscale;
+	 font-family: poppins,sans-serif;
+	 color: #484848;
+	 text-align: left;
+}
+
+#html5{
+	font-size: 13px;
+	font-weight: 600;
+	text-align: left;
+
+}
+
+#css3{
+		font-size: 13px;
+		float: right;
+		margin-top: -30px;
+}
+
+/*ucuncu bolme insanlar*/
+
+#team{
+	color: #1f1f1f;
+	font-weight: 500px;
+	font-size: 45px;
+}
+
+.het{
+	height: 2px;
+	width: 100px;
+	background: #17a2b8; 
+	text-align: center;
+	margin: auto;
+	padding: auto;
+}
+
+#name{
+	font-weight: 400;
+	font-size: 20px;
+	text-align: center;
+}
+
+#icon{
+	text-align: center;
+}
+
+/*dorduncu bolme yazilar*/
+
+#yazilar{
+	width: 100%;
+	background: white;
+	max-height: 1300px;
+	display: inline-block;
+}
+
+#lg{
+	padding-bottom: 70px;
+	text-align: center;
+}
+
+#lg p{
+	font-size: 20px;
+	color: #6c757d;
+}
+
+#but{
+	border-color: #ccc;
+	padding: 0;
+	margin: 0;
+	background-size: 20px;
+}
+
+/*bewinci bolme wekiller*/
+
+#wekiller{
+	padding: 20px;
+}
+
+#what{
+	margin-top: 220px;
+	font-size: 48px;
+	position: relative;
+    font-size: 48px;
+    line-height: 56px;
+    color: black;
+}
+
+#create{
+	font-weight: 400;
+}
+
+#web{
+	font-size: 1.35714286em;
+    line-height: 1.68421053em;
+    font-weight: 600;
+	color: #1f1f1f;
+    margin: 0;
+    letter-spacing: .5px;
+}
+
+#lorem{
+    font-style: normal;
+    font-weight: 400;
+    text-transform: none;
+    line-height: 1.7;
+    letter-spacing: 0;
+    color: #777;
+    font-family: poppins,sans-serif;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.seperator {
+    color: #ccc;
+    width: 100%;
+    margin: 30px auto;
+    overflow: hidden;
+    text-align: center;
+    line-height: 1.9em;
+}
+	.seperator i,  .seperator a{
+    	margin: 0 20px 0 24px;
+    	display: inline-block;
+	}
+	.seperator i, .separator i {
+   	 	font-size: 18px;
+	}
+.fa{
+    font-weight: 300;
+}
+}
+
+.fa{
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 3;
+}
+	.seperator::before,.seperator::after{
+    border-bottom: 1px solid #eee;
+    content: "";
+    display: inline-block;
+    height: .65em;
+    margin: 0 -4px 0 -100%;
+    vertical-align: top;
+    width: 50%;
+}
+	.seperator::after, .separator::after {
+    margin: 0 -100% 0 0;
+}
+#our{
+	font-weight: 400;
+	color: #777;
+}    
+
+/*axirinci bolme*/
+
+#footer {
+    
+    position: relative;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 400;
+    font-family: poppins,sans-serif;
+
+}
+
+.widget-title{
+	font-size: 16px;
+	color: #1f1f1f;
+	font-weight: 600;				
+
+}
+.list li {
+    line-height: 32px; 
+}
+li {
+    display: list-item;
+    text-align: -webkit-;
+}
+.list{
+	list-style: none;
+    list-style-position: initial;
+    list-style-image: initial;
+    list-style-type: none;
+
+}
+
+#a{
+	color: #6c757d;
+	/*margin-left: -40px;*/
+
+}
+#button{
+	border-radius: 5px;
+	background-color: #2250fc;
+	border-color: #2250fc;
+	color: white;
+}
+
+/*scrolltotopbotton*/
+
+body,
+html {
+  margin: 0;
+  height: 100%;
+}
+#scrollToTopButton {
+  position: fixed;
+  bottom: 26px;
+  right: 26px;
+  border-radius: 100px;
+  cursor: pointer;
+  background: lightgray;
+  padding: 0;
+  border: 0;
+  width: 40px;
+  height: 40px;
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.3);
+  /*font-size: xx-large;*/
+  font-size: small;
+  outline: 0;
+  visibility: hidden;
+  transform: scale(0);
+  opacity: 0;
+  transition: 0.2s;
+  color: white;	
+}
+#scrollToTopButton.show {
+  visibility: visible;
+  transform: scale(1);
+  opacity: 1;
+}
+#scrollToTopButton:hover,
+#scrollToTopButton:focus{
+	filter: brightness(1);
+	outline: none;
+	background: #2250FC;
+}
+
+#scrollToTopButton:after{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#scrollToTopButton:after{
+	width: 8px;
+	height: 8px;
+	transform: translate(-50%, -50%) rotate(45deg);
+	border-top: 2px solid #f5f0f6;
+	border-left: 2px solid #f5f0f6;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
